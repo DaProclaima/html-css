@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>classes and ids, spans</title>
+</head>
+
+<body>
+  <style>
+    #decide {
+      color: green;
+      font-size: 300%;
+    }
+
+    .bluebox {
+      background-color: #3A5795;
+      color: white;
+      height: 100px;
+      width: auto;
+
+    }
+
+    .yellowbox {
+      background-color: rgb(222, 224, 85);
+      height: 100px;
+      width: auto;
+    }
+
+    .greenbox {
+      background-color: hsl(120, 100%, 25%);
+      height: 100px;
+      width: auto;
+    }
+
+    .great {
+      background-color: rgb(52, 2, 82);
+    }
+
+    #better {
+      background-color: rgb(194, 124, 124);
+    }
+    .group {
+      position: relative;
+      /* height: 400px; */
+      margin-top: 20%;
+    }
+  </style>
+  <div>
+    <p id='decide'>Decide what not to do is as important as deciding what to do.</p>
+  </div>
+  <div class='group'>
+    <div class="bluebox">
+      <p >Facebook is <span class='great'>great</span></p>
+    </div>
+    <div class="yellowbox">
+      <p>Apple is <span id='better'>better</span></p>
+    </div>
+    <div class="greenbox">
+      <p >Microsoft</p>
+    </div>
+  </div>
+  
+</body>
+
+</html>
