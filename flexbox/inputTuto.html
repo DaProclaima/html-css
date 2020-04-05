@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout</title>
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" media="all">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .searchBar {
+      /* border: 5px solid seagreen; */
+      display: flex;
+      /* justify-content: space-between; */
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    .searchBar > * {
+      border: none;
+      padding: 10px;
+    }
+
+    input {
+      flex: 1;
+      /* background-color: yellow; */
+    }
+    i {
+      background-color: #eee;
+      color: #1d1d1d;
+    }
+    button {
+      background-color: #eee;
+      color: #1d1d1d;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="searchBar">
+    <i class="fa fa-search"></i>
+
+    <i class="fa fa-search"></i>
+    <input type="text" />
+    <button>Search</button>
+  </div>
+</body>
+</html>

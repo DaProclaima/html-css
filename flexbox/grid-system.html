@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid System</title>
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" media="all">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .grid {
+      display: flex;
+      align-items:  flex-start;
+      min-height: 100vh;
+      flex-wrap: wrap;
+      border: 10px solid goldenrod;
+    }
+    .gridCell {   
+      /* flex: 1;  */
+      width: calc(50% - 20px);
+      border: 1px solid red;
+      margin: 0 10px;
+      text-align: center;
+    }
+    .gridCell:first-child {
+      /* align-self: flex-end; */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="gridCell">Hello</div>
+    <div class="gridCell">Je suis</div>
+    <div class="gridCell">Antho</div>
+  </div>
+</body>
+</html>
